@@ -95,7 +95,7 @@ function init() {
     scene.environment = texture;
   });
 
-  window.addEventListener("resize", onResize);
+  window.addEventListener("resize", onResize(camera, renderer));
 }
 
 function animationLoop() {
@@ -154,3 +154,4 @@ function updateControls() {
     barsB[selectedBarB].position.x += speed;
   }
 }
+
